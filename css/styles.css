@@ -827,7 +827,6 @@ span.part-color {
   position: relative;
   margin-bottom:30px;
 }
-
 .check-text span {
   width: 16px;
   height: 15px;
@@ -837,13 +836,11 @@ span.part-color {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .policy-check:checked + .check-text span {
   border: none;
   background-color: var(--accent-color);
-}
-.policy-check:checked + .check-text .input-modal-icon {
-  fill: var(--btn-color);
 }
 .modal-form-button {
   min-width: 200px;
