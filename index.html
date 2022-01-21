@@ -393,7 +393,6 @@
             </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        </div>
         <form action="#" class="callback-form">
             <div class="form-field">
                 <label class="input-text" for="user-name">Имя</label>
@@ -412,27 +411,57 @@
             </div>
             <div class="form-field">
                 <label class="input-text" for="user-tel">Телефон</label>
+                <div class="input-wrap">
                     <input
                     type="tel" 
                     class="form-input" 
                     name="user-tel" 
                     placeholder=" " 
-                    required
-                    id="user-tel" 
-                    />
+                    id="user-tel"
+                    required />
+                    <svg class="input-icon" width="12" height="12">
+                        <use href="./images/symbol-defs.svg#icon-modal-phone"></use> </svg>
+                </div>
             </div>
             <div class="form-field">
                 <label class="input-text" for="user-email">Почта</label>
-                <input type="email" 
-                class="form-input" 
-                name="user-email" 
-                placeholder=" " 
-                id="user-email"
-                required />
-                <svg class="input-icon" width="12" height="12">
-                    <use href="./images/symbol-defs.svg#icon-modal-envelope"></use> </svg>
+                <div class="input-wrap">
+                    <input 
+                    type="email" 
+                    class="form-input" 
+                    name="user-email" 
+                    placeholder=" " 
+                    id="user-email"
+                    required />
+                    <svg class="input-icon" width="12" height="15">
+                        <use href="./images/symbol-defs.svg#icon-modal-envelope"></use> </svg>
+                </div>
             </div>
+            <div class="form-field">
+                <label class="input-text" for="user-text">Комментарий</label>
+                <textarea 
+                name="user-text" 
+                id="user-text" 
+                class="form-text" 
+                placeholder="Введите текст">
+                </textarea>
+            </div>
+            <div class="form-field">
+                <input 
+                type="checkbox" 
+                name="policy" 
+                id="policy" 
+                class="policy-check visually-hidden" />
+                <label for="policy" class="check-text">
+                    <span>
+                    <svg class="input-modal-icon" width="16" height="15">
+                        <use href="./images/symbol-defs.svg#icon-checkbox"></use></svg>
+                    </span>
+                Соглашаюсь с рассылкой и принимаю <a href="" class="link-policy">&nbsp;Условия договора</a></label>
+            </div>
+            <button type="Отправить" class="button modal-form-button">Отправить</button>
         </form>
+        </div>
     </div>
     <script src="./js/modal.js"></script>
 </body>
