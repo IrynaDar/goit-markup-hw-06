@@ -640,6 +640,14 @@ span.part-color {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input:hover::placeholder,
+.footer-input:focus::placeholder {
+  color: var(--accent-color);
 }
 .form-footer-button {
   min-width: 200px;
@@ -710,12 +718,38 @@ span.part-color {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--accent-color);
+}
 .is-hidden {
-  opacity: 0;
+  opacity: 0.5;
   pointer-events: none;
   visibility: hidden;
 }
+.modal-title {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 448px;
+  height: 23px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.form-field {
+  margin-bottom: 30px;
+
+}
+
 
   /* -------ПОРТФОЛИО------------ */
 .portfolio-info {

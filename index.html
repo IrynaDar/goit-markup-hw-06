@@ -373,7 +373,8 @@
                     class="footer-input" 
                     name="user-email" 
                     placeholder="E-mail" 
-                    required />
+                    id="user-email"
+                    required/>
                     <button type="button" class="button form-footer-button">Подписаться
                         <svg class="footer-icon" width="24" height="24">
                             <use href="./images/symbol-defs.svg#icon-form-send"></use>
@@ -391,7 +392,47 @@
                 <use href="./images/symbol-defs.svg#icon-cross"></use>
             </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         </div>
+        <form action="#" class="callback-form">
+            <div class="form-field">
+                <label class="input-text" for="user-name">Имя</label>
+                <div class="input-wrap">
+                    <input 
+                    type="text" 
+                    class="form-input" 
+                    name="user-name" 
+                    placeholder=" " 
+                    required 
+                    minlength="2"
+                    id="user-name" />
+                        <svg class="input-icon" width="12" height="12">
+                        <use href="./images/symbol-defs.svg#icon-man"></use> </svg>
+                </div>
+            </div>
+            <div class="form-field">
+                <label class="input-text" for="user-tel">Телефон</label>
+                    <input
+                    type="tel" 
+                    class="form-input" 
+                    name="user-tel" 
+                    placeholder=" " 
+                    required
+                    id="user-tel" 
+                    />
+            </div>
+            <div class="form-field">
+                <label class="input-text" for="user-email">Почта</label>
+                <input type="email" 
+                class="form-input" 
+                name="user-email" 
+                placeholder=" " 
+                id="user-email"
+                required />
+                <svg class="input-icon" width="12" height="12">
+                    <use href="./images/symbol-defs.svg#icon-modal-envelope"></use> </svg>
+            </div>
+        </form>
     </div>
     <script src="./js/modal.js"></script>
 </body>
