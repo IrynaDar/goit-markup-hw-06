@@ -597,7 +597,6 @@ span.part-color {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .company-soc-link:hover,
 .company-soc-link:focus {
   background-color: var(--accent-color);
@@ -622,6 +621,9 @@ span.part-color {
 }
 .footer-form-block {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 .footer-input {
   margin-right: 12px;
@@ -630,7 +632,6 @@ span.part-color {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-top: 20px;
   width: 358px;
   height: 50px;
   font-family: inherit;
@@ -654,18 +655,21 @@ span.part-color {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+  display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-icon {
+  margin-left: 10px;
+}
 .form-footer-button:hover,
 .form-footer-button:focus {
   background-color: var(--back-color);
-}
 }
 
  /* -------МОДАЛКА------------ */
