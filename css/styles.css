@@ -658,6 +658,7 @@ span.part-color {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: transparent;
   color: var(--btn-color);
   font-weight: bold;
   font-size: 16px;
@@ -801,14 +802,14 @@ span.part-color {
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: inherit;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   padding: 12px 16px 12px 16px;
-  outline: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-text:hover,
 .form-textLfocus {
@@ -848,6 +849,7 @@ span.part-color {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: transparent;
   color: var(--btn-color);
   font-weight: bold;
   font-size: 16px;
@@ -865,7 +867,9 @@ span.part-color {
 .modal-form-button:focus {
   background-color: var(--back-color);
 }
-
+.link-policy {
+  color: var(--accent-color)
+}
 
   /* -------ПОРТФОЛИО------------ */
 .portfolio-info {
